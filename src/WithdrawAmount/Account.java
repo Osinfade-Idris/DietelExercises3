@@ -1,0 +1,47 @@
+package WithdrawAmount;
+public class Account {
+
+    private String name; // instance variable
+    private double balance; // instance variable
+
+    /// account constructors that receives 2 parameters
+    public Account (String name, double balance)
+    {
+        this.name = name; /// assign name to instance variable name
+
+        // validate that the balance is greater than 0.0; if not
+        // instance variable keeps its default initial value of 0.0
+        if (balance > 0.0) // if the balance is valid
+            this.balance = balance; // assign it to instance variable
+    }
+
+    //method that withdrawal (removes) only a valid amount from the balance
+    public void withdraw(double withdrawalAmount)
+    {
+        if (withdrawalAmount < balance && withdrawalAmount > 0.0) { // if the withdrawal amount is valid
+            balance = balance - withdrawalAmount; //remove it from the balance
+        }else{
+            System.out.println("Invalid Balance");
+        }
+
+    }
+
+    //method to return the balance
+    public double getBalance()
+    {
+        return balance;
+    }
+
+    // method that sets the name
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    // method that returns the name
+
+    public String getName()
+    {
+        return name; //give the value of the name back to caller
+    }
+}
