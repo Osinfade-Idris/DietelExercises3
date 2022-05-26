@@ -18,12 +18,12 @@ public class Account {
     //method that withdrawal (removes) only a valid amount from the balance
     public void withdraw(double withdrawalAmount)
     {
-        if (withdrawalAmount < balance && withdrawalAmount > 0.0) { // if the withdrawal amount is valid
+        if
+        (balance > withdrawalAmount && withdrawalAmount > 0.0) { // if the withdrawal amount is valid
             balance = balance - withdrawalAmount; //remove it from the balance
         }else{
-            System.out.println("Invalid Balance");
+            System.out.println("Invalid Withdrawal");
         }
-
     }
 
     //method to return the balance
