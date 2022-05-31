@@ -16,12 +16,12 @@ public class Invoice {
         this.price=price;
         if (price < 0.0) // if the price is valid
         {
-            price=0.0;
+            this.price=0.0;
         }
 
         if (quantity < 0.0) // if the price is valid
         {
-            quantity=0;
+            this.quantity=0;
         }
 
     }
