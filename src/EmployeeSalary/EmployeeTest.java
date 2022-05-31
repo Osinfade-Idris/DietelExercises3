@@ -18,9 +18,9 @@ public class EmployeeTest {
         Employee1.getIncreasedSalary(IncreasedSalary);
         Employee2.getIncreasedSalary(IncreasedSalary);
 
-        double YearlySalary =  Employee1.getIncreasedSalary(IncreasedSalary);
-        Employee1.getYearlySalary(Employee1.getIncreasedSalary(IncreasedSalary));
-        Employee2.getYearlySalary(Employee1.getIncreasedSalary(IncreasedSalary));
+        double YearlySalary = 0;
+        Employee1.getYearlySalary(YearlySalary);
+        Employee2.getYearlySalary(YearlySalary);
 
         System.out.printf("Employee %s %s  Increased Salary: %.2f, Yearly Salary %.2f%n", Employee1.getFirstName(), Employee1.getLastName(), Employee1.getIncreasedSalary(IncreasedSalary), Employee1.getYearlySalary(YearlySalary));
         System.out.printf("Employee %s %s  Increased Salary: %.2f, Yearly Salary %.2f%n", Employee2.getFirstName(), Employee2.getLastName(), Employee2.getIncreasedSalary(IncreasedSalary), Employee2.getYearlySalary(YearlySalary));
